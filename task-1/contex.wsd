@@ -1,0 +1,18 @@
+@startuml
+!theme plain
+actor "Пользователь" as user
+actor "Специалист по машинному обучению" as specialist
+
+package Классификатор{
+  usecase "Загрузить тестовые данные" as set_test
+  usecase "Установить параматеры" as set_params
+  usecase "Обучить модель" as learn_model
+  usecase "Классифицировать объект" as classify_object
+}
+
+user --> classify_object
+specialist --> set_test
+specialist --> set_params
+specialist --> learn_model
+specialist --> classify_object
+@enduml
