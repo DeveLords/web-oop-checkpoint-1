@@ -1,0 +1,18 @@
+#Python env
+env
+venv
+.env
+.venv
+env/
+venv/
+.env/
+.venv/
+
+#Python cache
+__pycache__/
+
+#MAC_OS
+.DS_STORE
+
+#VS_CODE
+.vscode/
